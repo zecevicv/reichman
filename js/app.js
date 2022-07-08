@@ -121,3 +121,30 @@ if (document.querySelector('.home-courses-2 .swiper')) {
     }
   });
 }
+
+/* #Home Courses 2 Slider
+  ======================================================= */
+if (document.querySelector('.category-courses .swiper')) {
+  new Swiper(".category-courses .swiper", {
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2,
+        grid: {
+          rows: 1,
+          fill: 'row'
+        },
+        allowSlideNext: true,
+        allowSlidePrev: true
+      },
+      1024: {
+        slidesPerView: 1,
+        grid: {
+          rows: 1,
+          fill: 'row'
+        },
+        allowSlideNext: false,
+        allowSlidePrev: false
+      }
+    }
+  });
+}
