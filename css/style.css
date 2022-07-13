@@ -3086,3 +3086,28 @@ body {
     margin-top: 12vw;
   }
 }
+
+/* #Contact Page
+================================================== */
+.contact-page .banner .container {
+  justify-content: space-between;
+}
+
+.contact-page .banner .box:nth-of-type(1) {
+  background-color: #0874F7;
+}
+
+.contact-page .banner .box:nth-of-type(2) {
+  background-color: #F1A91D;
+  transform: translateY(-100%);
+}
+
+.contact-page .banner .box:nth-of-type(3) {
+  background-color: #63BA47;
+  transform: translateX(-100%);
+}
+
+.contact-page .banner .box:nth-of-type(4) {
+  background-color: #AB0F0F;
+  transform: translate(-200%, -100%);
+}
