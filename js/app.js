@@ -71,28 +71,45 @@ if (document.querySelector('.partners .swiper')) {
 /* #Team Slider
   ======================================================= */
 if (document.querySelector('.team-slider .swiper')) {
-  new Swiper(".team-slider .swiper", {
-    navigation: {
-      nextEl: ".team-slider .next",
-      prevEl: ".team-slider .prev",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-        grid: {
-          rows: 2,
-          fill: 'row'
-        },
+  if (document.querySelector('.team-slider').classList.contains('alt')) {
+    new Swiper(".team-slider .swiper", {
+      navigation: {
+        nextEl: ".team-slider .next",
+        prevEl: ".team-slider .prev",
       },
-      1024: {
-        slidesPerView: 4.6,
-        grid: {
-          rows: 1,
-          fill: 'row'
+      breakpoints: {
+        0: {
+          slidesPerView: 1.3,
         },
+        1024: {
+          slidesPerView: 5,
+        }
       }
-    }
-  });
+    });
+  } else {
+    new Swiper(".team-slider .swiper", {
+      navigation: {
+        nextEl: ".team-slider .next",
+        prevEl: ".team-slider .prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          grid: {
+            rows: 2,
+            fill: 'row'
+          },
+        },
+        1024: {
+          slidesPerView: 4.6,
+          grid: {
+            rows: 1,
+            fill: 'row'
+          },
+        }
+      }
+    });
+  }
 }
 
 /* #Home Courses 2 Slider
@@ -122,29 +139,62 @@ if (document.querySelector('.home-courses-2 .swiper')) {
   });
 }
 
-/* #Home Courses 2 Slider
+/* #Category Courses
   ======================================================= */
 if (document.querySelector('.category-courses .swiper')) {
-  new Swiper(".category-courses .swiper", {
+  if (document.querySelector('.category-courses').classList.contains('alt')) {
+    new Swiper(".category-courses .swiper", {
+      breakpoints: {
+        0: {
+          slidesPerView: 1.2,
+        },
+        1024: {
+          slidesPerView: 4,
+        }
+      }
+    });
+  } else {
+    new Swiper(".category-courses .swiper", {
+      breakpoints: {
+        0: {
+          slidesPerView: 1.2,
+          grid: {
+            rows: 1,
+            fill: 'row'
+          },
+          allowSlideNext: true,
+          allowSlidePrev: true
+        },
+        1024: {
+          slidesPerView: 1,
+          grid: {
+            rows: 1,
+            fill: 'row'
+          },
+          allowSlideNext: false,
+          allowSlidePrev: false
+        }
+      }
+    });
+  }
+}
+
+/* #Timeline Slider
+  ======================================================= */
+if (document.querySelector('.timeline .swiper')) {
+  new Swiper(".timeline .swiper", {
+    navigation: {
+      nextEl: ".timeline .next",
+      prevEl: ".timeline .prev",
+    },
     breakpoints: {
       0: {
         slidesPerView: 1.2,
-        grid: {
-          rows: 1,
-          fill: 'row'
-        },
-        allowSlideNext: true,
-        allowSlidePrev: true
       },
       1024: {
-        slidesPerView: 1,
-        grid: {
-          rows: 1,
-          fill: 'row'
-        },
-        allowSlideNext: false,
-        allowSlidePrev: false
+        slidesPerView: 6.25,
       }
-    }
+    },
+    loop: true
   });
 }
