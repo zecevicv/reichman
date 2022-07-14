@@ -3566,3 +3566,207 @@ body {
     background-color: white;
   }
 }
+
+/* #Team Page
+================================================== */
+.team-page .banner .box:nth-of-type(1) {
+  background-color: #0F2D96;
+}
+
+.team-page .banner .box:nth-of-type(2) {
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+
+.team-page .banner .box:nth-of-type(3) {
+  background-color: white;
+  transform: translateX(-100%);
+}
+
+.team-page .banner .box:nth-of-type(4) {
+  background-color: #E7E9EE;
+  transform: translate(-200%, -100%);
+}
+
+/* #Team Page
+================================================== */
+.team-page .team-slider h2 {
+  text-align: center;
+  margin-bottom: 4.4vw;
+  line-height: 1;
+}
+
+/* #Quottes Slider
+================================================== */
+.quottes-slider {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.quottes-slider .swiper {
+  margin-right: 0;
+}
+
+.quottes-slider .quottes {
+  height: 3vw;
+  line-height: 7vw;
+  margin-bottom: 1.5vw;
+}
+
+.quottes-slider .swiper-arrows {
+  margin-top: 1.5vw;
+  position: relative;
+  justify-content: center;
+  z-index: 20;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: auto;
+}
+
+.quottes-slider .slider p:last-child {
+  margin-top: .25vw;
+}
+
+@media (max-width: 1023.98px) {
+  .quottes-slider {
+    display: none!important;
+  }
+}
+
+/* #Team Page Slider Alt
+================================================== */
+.team-page .team-slider.alt .container {
+  width: 74%;
+  padding: 0;
+}
+
+.team-page .team-slider.alt .slider ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-page .team-slider.alt .slider ul li {
+  flex: 0 0 25%;
+}
+
+.team-page .team-slider.alt .team-card .img img {
+  height: 18.22vw;
+}
+
+/* #Team Page Slider
+================================================== */
+@media (min-width: 1024px) {
+  .team-page .team-slider:not(.alt) .container {
+    width: 74%;
+  }
+  
+  .team-page .team-slider:not(.alt) .tab-navigation ul {
+    margin-bottom: 5.2vw;
+  }
+  
+  .team-page .team-slider:not(.alt) .tab-panel ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .team-page .team-slider:not(.alt) .tab-panel li {
+    flex: 0 0 25%;
+  }
+  
+  .team-page .team-slider:not(.alt) .quottes-slider {
+    flex: 0 0 50%;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 0;
+    max-height: 100%;
+  }
+  
+  .team-page .team-slider:not(.alt) .team-card .img img {
+    height: 18.22vw;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .team-page .team-slider:not(.alt) .team-card .img img {
+    height: 83.2vw;
+  }
+
+  .team-page .team-slider:not(.alt) .tab-panel li:not(:last-child) {
+    margin-bottom: 9.33vw;
+  }
+
+  .team-page .team-slider:not(.alt) .team-card .text p {
+    display: block;
+  }
+
+  .team-page .team-slider:not(.alt) .team-card .text p {
+    max-height: 100%;
+    overflow: visible;
+  }
+
+  .team-page .team-slider:not(.alt) .team-card .text {
+    padding: 5.33vw 5.33vw 13vw 5.33vw;
+  }
+
+  .team-slider .tab-panel:nth-child(1) .team-card .text {
+    background-color: #f1aa1dd5;
+  }
+  
+  .team-slider .tab-panel:nth-child(2) .team-card .text {
+    background-color: #911515dc;
+  }
+  
+  .team-slider .tab-panel:nth-child(3) .team-card .text {
+    background-color: #64ba47d5;
+  }
+  
+  .team-slider .tab-panel:nth-child(4) .team-card .text {
+    background-color: #0f2c96c9;
+  }
+}
+
+/* #Img Section
+================================================== */
+.img-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 76.3%;
+}
+
+.img-section .img {
+  flex: 0 0 28.64vw;
+  position: relative;
+}
+
+.img-section .box:first-of-type {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #E7E9EE;
+}
+
+.img-section .box:last-of-type {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #0F2D96;
+  transform: translateY(-100%) translateX(100%);
+}
+
+.img-section .img img {
+  width: 100%;
+  height: 35vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-section .text {
+  flex: 0 0 27.8vw;
+}
+
+.img-section h2 {
+  margin-bottom: 1.5vw;
+}

@@ -32,6 +32,18 @@ if (document.querySelector('.home-banner .swiper')) {
   });
 }
 
+/* #Quottes Slider
+  ======================================================= */
+if (document.querySelector('.quottes-slider .swiper')) {
+  new Swiper(".quottes-slider .swiper", {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".quottes-slider .next",
+      prevEl: ".quottes-slider .prev",
+    },
+  });
+}
+
 /* #Post Slider
   ======================================================= */
 if (document.querySelector('.post-slider .swiper')) {
@@ -70,47 +82,50 @@ if (document.querySelector('.partners .swiper')) {
 
 /* #Team Slider
   ======================================================= */
-if (document.querySelector('.team-slider .swiper')) {
-  if (document.querySelector('.team-slider').classList.contains('alt')) {
-    new Swiper(".team-slider .swiper", {
-      navigation: {
-        nextEl: ".team-slider .next",
-        prevEl: ".team-slider .prev",
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1.3,
+if (!document.querySelector('.team-page')) {
+  if (document.querySelector('.team-slider .swiper')) {
+    if (document.querySelector('.team-slider').classList.contains('alt')) {
+      new Swiper(".team-slider .swiper", {
+        navigation: {
+          nextEl: ".team-slider .next",
+          prevEl: ".team-slider .prev",
         },
-        1024: {
-          slidesPerView: 5,
-        }
-      }
-    });
-  } else {
-    new Swiper(".team-slider .swiper", {
-      navigation: {
-        nextEl: ".team-slider .next",
-        prevEl: ".team-slider .prev",
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 2,
-          grid: {
-            rows: 2,
-            fill: 'row'
+        breakpoints: {
+          0: {
+            slidesPerView: 1.3,
           },
+          1024: {
+            slidesPerView: 5,
+          }
+        }
+      });
+    } else {
+      new Swiper(".team-slider .swiper", {
+        navigation: {
+          nextEl: ".team-slider .next",
+          prevEl: ".team-slider .prev",
         },
-        1024: {
-          slidesPerView: 4.6,
-          grid: {
-            rows: 1,
-            fill: 'row'
+        breakpoints: {
+          0: {
+            slidesPerView: 2,
+            grid: {
+              rows: 2,
+              fill: 'row'
+            },
           },
+          1024: {
+            slidesPerView: 4.6,
+            grid: {
+              rows: 1,
+              fill: 'row'
+            },
+          }
         }
-      }
-    });
+      });
+    }
   }
 }
+
 
 /* #Home Courses 2 Slider
   ======================================================= */
