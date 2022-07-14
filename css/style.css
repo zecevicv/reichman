@@ -1932,6 +1932,61 @@ body {
   background-color: #E7E9EE;
 }
 
+.video-section .imgs {
+  display: flex;
+}
+
+.video-section .img-1,
+.video-section .img-2 {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.video-section .img-1 img {
+  width: 37.13vw;
+  height: 44.8vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.video-section .img-1 .box-2 {
+  transform: translateX(-100%) translateY(-100%);
+}
+
+.about-page .video-section .text {
+  margin-bottom: 17.86vw;
+}
+
+.video-section .img-2 {
+  margin-top: 12.18vw;
+}
+
+.video-section .img-2 img {
+  width: 37.13vw;
+  height: 44.8vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.video-section .img-2 .box-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
+
+.video-section .img-2 .box-4 {
+  background-color: #0F2D96;
+}
+
+.video-section .img-2 .box-5 {
+  background-color: #D8DDEE;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
 @media (max-width: 1023.98px) {
   .video-section {
     margin-bottom: 20vw;
@@ -2002,6 +2057,80 @@ body {
 
   .video-section .box-4 {
     display: none;
+  }
+
+
+  .video-section .imgs {
+    flex-direction: column;
+    padding: 0 6.65vw 0 5.33vw;
+    overflow: hidden;
+    padding-bottom: 23.33vw;
+  }
+
+  .video-section .imgs .box {
+    width: 23.33vw!important;
+    height: 23.33vw!important;
+  }
+  
+  .video-section .img-1 img {
+    width: 80vw;
+    height: 96.13vw;
+  }
+
+  .video-section .img-1 .box-1 {
+    bottom: auto;
+    left: auto;
+    top: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  .video-section .img-1 .box-2 {
+    bottom: auto;
+    left: auto;
+    top: 0;
+    right: 0;
+    background-color: #E7E9EE;
+  }
+  
+  .video-section .img-1 .box-2 {
+    transform: translateX(100%) translateY(100%);
+  }
+  
+  .about-page .video-section .text {
+    margin-bottom: 17.86vw;
+  }
+  
+  .video-section .img-2 {
+    margin-top: 12.18vw;
+  }
+  
+  .video-section .img-2 img {
+    width: 72.13vw;
+    height: 88.4vw;
+    margin-right: auto;
+  }
+  
+  .video-section .img-2 .box-3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: none;
+  }
+  
+  .video-section .img-2 .box-4 {
+    background-color: #0F2D96;
+    transform: translateX(-100%) translateY(100%);
+    display: block;
+  }
+  
+  .video-section .img-2 .box-5 {
+    background-color: #D8DDEE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
   }
 }
 
@@ -3769,4 +3898,228 @@ body {
 
 .img-section h2 {
   margin-bottom: 1.5vw;
+}
+
+/* #About Page
+================================================== */
+.about-page .banner .box:first-of-type {
+  background-color: #0F2D96;
+}
+
+.about-page .banner .box:last-of-type {
+  background-color: white;
+  transform: translate(-100%, -100%);
+}
+
+.about-page .banner-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page .banner-links a {
+  margin-bottom: 1vw;
+}
+
+.about-page .team-slider h2 {
+  text-align: center;
+  margin-bottom: 5.2vw;
+}
+
+.about-page .team-slider .container {
+  padding: 0 2vw;
+}
+
+.about-page .team-slider ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-page .team-slider li {
+  flex: 0 0 20%;
+  padding: 0.65vw;
+}
+
+.about-page .team-slider .team-card:hover .text {
+  background-color: #0f2c96d0;
+}
+
+@media (min-width: 1024px) {
+  .about-page .more-worlds {
+    overflow: hidden;
+  }
+  
+  .about-page .more-worlds .container {
+    width: 83%;
+    padding-bottom: 2vw;
+  }
+  
+  .about-page .more-worlds li {
+    flex: 0 0 25%;
+    padding: 0 2vw;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .about-page .banner-links {
+    flex-direction: row;
+  }
+  
+  .about-page .banner-links a {
+    margin-bottom: 0;
+    margin-left: 3vw;
+  }
+
+  .about-page .banner-links a:last-child {
+    margin-left: 0;
+  }
+
+  .about-page .team-slider h2 {
+    margin-bottom: 16vw;
+  }
+
+  .about-page .team-slider .container {
+    padding: 0;
+    width: 79%;
+  }
+  
+  .about-page .team-slider ul {
+    display: block;
+  }
+  
+  .about-page .team-slider li {
+    padding: 0;
+  }
+
+  .about-page .team-slider li:not(:last-child) {
+    margin-bottom: 9.33vw;
+  }
+  
+  .about-page .team-slider .team-card .text {
+    background-color: #0f2c96d0;
+  }
+
+  .about-page .team-slider .team-card .text p {
+    max-height: 100%;
+    display: block;
+  }
+
+  .about-page .team-slider .team-card .img img {
+    height: 83.2vw;
+  }
+
+  .about-page .team-slider .tab-panel li:not(:last-child) {
+    margin-bottom: 9.33vw;
+  }
+
+  .about-page .team-slider .team-card .text p {
+    display: block;
+  }
+
+  .about-page .team-slider .team-card .text p {
+    max-height: 100%;
+    overflow: visible;
+  }
+
+  .about-page .team-slider .team-card .text {
+    padding: 5.33vw 5.33vw 13vw 5.33vw;
+  }
+}
+
+/* #Vision
+================================================== */
+.vision {
+  margin-bottom: 11.7vw;
+}
+
+.vision .container {
+  width: 82.2%;
+}
+
+.vision h2 {
+  text-align: center;
+  margin-bottom: 7vw;
+}
+
+.vision ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1vw;
+}
+
+.vision ul li {
+  flex: 0 0 25%;
+  padding: 1vw;
+}
+
+.vision ul li > div {
+  box-shadow: 0 3px 24px #c4d1fe7a;
+  padding: 1.5vw;
+  min-height: 22vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vision .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vision .top img {
+  width: 4.89vw;
+}
+
+.vision .bottom {
+  padding-right: 1.5vw;
+}
+
+.vision .bottom > div:first-child {
+  margin-bottom: 3.125vw;
+}
+
+@media (max-width: 1023.98px) {
+  .vision {
+    margin-bottom: 25.33vw;
+  }
+  
+  .vision .container {
+    width: 92%;
+  }
+  
+  .vision h2 {
+    margin-bottom: 16.66vw;
+  }
+  
+  .vision ul {
+    margin: -.66vw;
+  }
+  
+  .vision ul li {
+    flex: 0 0 50%;
+    padding: .66vw;
+  }
+  
+  .vision ul li > div {
+    padding: 4vw;
+    min-height: 61.33vw;
+  }
+  
+  .vision .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .vision .top img {
+    width: 11.6vw;
+  }
+  
+  .vision .bottom {
+    padding-right: 0;
+  }
+  
+  .vision .bottom > div:first-child {
+    margin-bottom: 5.33vw;
+  }
 }
