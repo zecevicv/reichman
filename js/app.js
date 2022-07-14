@@ -198,3 +198,22 @@ if (document.querySelector('.timeline .swiper')) {
     loop: true
   });
 }
+
+/* #Blog Post Slider
+  ======================================================= */
+if (document.querySelector('.blog-post-slider .swiper')) {
+  new Swiper(".blog-post-slider .swiper", {
+    navigation: {
+      nextEl: ".blog-post-slider .next",
+      prevEl: ".blog-post-slider .prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 3.8,
+      }
+    }
+  });
+}
