@@ -29,6 +29,9 @@ if (document.querySelector('.home-banner .swiper')) {
       nextEl: ".home-banner .next",
       prevEl: ".home-banner .prev",
     },
+    autoplay: {
+      delay: 5000,
+    },
   });
 }
 
@@ -40,6 +43,9 @@ if (document.querySelector('.quottes-slider .swiper')) {
     navigation: {
       nextEl: ".quottes-slider .next",
       prevEl: ".quottes-slider .prev",
+    },
+    autoplay: {
+      delay: 5000,
     },
   });
 }
